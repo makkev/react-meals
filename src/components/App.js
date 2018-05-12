@@ -13,7 +13,6 @@ class App extends Component {
 }
 
 function mapStateToProps(calendar) {
-  console.log('calendar ==>', calendar['sunday']);
   const dayOrder = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
   return {
     calendar: dayOrder.map((day) => ({
